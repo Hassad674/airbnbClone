@@ -107,6 +107,13 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           >
             {currentUser ? (
               <>
+               <MenuItem
+                  onClick={() => {
+                    router.push("/favorites");
+                    toggleOpen();
+                  }}
+                  label="My Favorites"
+                />
                 <MenuItem
                   onClick={() => {
                     toggleOpen();
